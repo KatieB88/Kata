@@ -1,0 +1,9 @@
+function squareDigits(num){
+  var snum = num.toString();
+  var arr = [];
+  for(var i = 0; i < snum.length; i++){
+    arr[i] = snum[i] * snum[i];
+  }
+  var a = arr.join('');
+  return Math.floor(a);
+}
