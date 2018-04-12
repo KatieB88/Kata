@@ -1,0 +1,17 @@
+function XO(str) {
+  str = str.toLowerCase();
+  var iCount = 0;
+  var xCount = 0;
+  for(var i = 0; i < str.length; i++){
+    if(str[i] === "o"){
+      iCount++;
+    }
+    if(str[i] === "x"){
+      xCount++;
+    }
+  }
+  if(iCount === xCount){
+    return true;
+  }
+ return false; 
+}
