@@ -1,0 +1,17 @@
+function validatePIN (pin) {
+  //return true or false
+ for(var i = 0; i < pin.length; i++){
+   if(pin[i] == "-" || pin[i] == "."){
+     return false;
+   }
+ }
+ var patt1 = /[0-9]/g;
+ var result = pin.match(patt1);
+ if(result.length === 4 || result.length === 6){
+   return true;
+ 
+ }
+ else{
+ return false;
+ }
+}
